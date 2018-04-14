@@ -1,0 +1,121 @@
+# depslib dependency file v1.0
+1504889926 source:e:\nueva carpeta (2)\tp_1\nueva carpeta\tp_1_cascara\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"funciones.h"
+
+1504893364 e:\nueva carpeta (2)\tp_1\nueva carpeta\tp_1_cascara\tp_1_cascara\funciones.h
+
+1504895298 source:e:\nueva carpeta (2)\tp_1\nueva carpeta\tp_1_cascara\tp_1_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"funciones.h"
+
+1504897832 source:c:\users\alumno\desktop\tp_1_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"funciones.h"
+
+1504895748 c:\users\alumno\desktop\tp_1_cascara\funciones.h
+
+1504889926 source:c:\users\alumno\desktop\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"funciones.h"
+
+1504900398 source:f:\nueva carpeta (2)\tp_1\tp_1_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"funciones.h"
+
+1504895750 f:\nueva carpeta (2)\tp_1\tp_1_cascara\funciones.h
+
+1504900864 source:f:\nueva carpeta (2)\tp_1\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"funciones.h"
+
+1504900366 source:m:\nueva carpeta (2)\tp_1\tp_1_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"funciones.h"
+
+1504895750 m:\nueva carpeta (2)\tp_1\tp_1_cascara\funciones.h
+
+1504899686 source:m:\nueva carpeta (2)\tp_1\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"funciones.h"
+
+1504903488 source:c:\users\mariano\desktop\nueva carpeta\tp_1\tp_1_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"funciones.h"
+
+1504895750 c:\users\mariano\desktop\nueva carpeta\tp_1\tp_1_cascara\funciones.h
+
+1504900864 source:c:\users\mariano\desktop\nueva carpeta\tp_1\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"funciones.h"
+
+1504903490 source:m:\mis tp\tp_1\tp_1_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"funciones.h"
+
+1504895750 m:\mis tp\tp_1\tp_1_cascara\funciones.h
+
+1504900864 source:m:\mis tp\tp_1\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"funciones.h"
+
+1523218812 source:e:\mis tp\tp_1\tp_1_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"funciones.h"
+
+1523217716 e:\mis tp\tp_1\tp_1_cascara\funciones.h
+
+1522934600 source:e:\mis tp\tp_1\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"funciones.h"
+
+1523217836 source:f:\mis tp\tp_1\tp_1_cascara\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"funciones.h"
+
+1523217716 f:\mis tp\tp_1\tp_1_cascara\funciones.h
+
+1522934600 source:f:\mis tp\tp_1\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"funciones.h"
+
