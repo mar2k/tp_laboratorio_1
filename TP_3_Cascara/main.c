@@ -9,25 +9,26 @@
 int main()
 {
     char seguir='s';
-    //char texto[]="LISTA DE LAS PELICULAS.bin";
     int opcion=0;
     int ok;
-    //int cont=0;
     int lugar;
     char titulo[50];
+    char archivo[]="PELICULA.bin";
+    char paginaWeb[]="LISTA DE LAS PELICULAS.html";
     EMovie *movie=(EMovie*) malloc(sizeof(EMovie)*TAM_P);
-    //FILE *archivo;
 
     iniEstado(movie,TAM_P);
 
-    while(seguir=='s')
+    cargarDesdeArchivo(movie,TAM_P,archivo);
+
+    do
     {
         mostrarListaPeliculas(movie,TAM_P);
         printf("1- Agregar pelicula\n");
         printf("2- Borrar pelicula\n");
         printf("3- modificar pelicula\n");
         printf("4- Generar pagina web\n");
-        printf("5- guardar y Salir\n");
+        printf("5- Salir\n");
 
         scanf("%d",&opcion);
 
@@ -35,16 +36,18 @@ int main()
         {
         case 1:
         {
+            system("cls");
             lugar=obtenerEspacioLibrePelicula(movie,TAM_P);
             ok=ingresarPeliculas(movie,TAM_P,lugar);
             if(!ok)
             {
-              printf("NUEVA PELICULA CARGADA!!!");
+                printf("NUEVA PELICULA CARGADA!!!\n");
             }
             else
             {
-                printf("NO SE PUDO CARGAR PELICULA");
+                printf("NO SE PUDO CARGAR PELICULA\n");
             }
+            guardarEnArchivo(movie,TAM_P,archivo);
             break;
         }
         case 2:
@@ -52,18 +55,29 @@ int main()
             igresoCadenaChar("INGRESE TITULO DE LA PELICULA: ",titulo);
             lugar=buscarPorNombre(movie,titulo,TAM_P);
             borrarDeLaListaPelicula(movie,lugar);
+            guardarEnArchivo(movie,TAM_P,archivo);
 
         }
         break;
         case 3:
         {
-
+            igresoCadenaChar("INGRESE TITULO DE LA PELICULA: ",titulo);
+            lugar=buscarPorNombre(movie,titulo,TAM_P);
+            modificarPelicula(movie,lugar);
+            guardarEnArchivo(movie,TAM_P,archivo);
+            break;
+        }
+        case 4:
+        {
+            system("cls");
+            generarPaginaWeb(paginaWeb,movie,TAM_P);
             break;
         }
 
-        case 4:
+        case 5:
         {
 
+            seguir = 'n';
             break;
         }
 
@@ -71,30 +85,7 @@ int main()
         system("pause");
         system("cls");
     }
+    while(seguir=='s');
     return 0;
 }
 
-/*
-
-if(lugar!=NULL)
-            {
-                seGuardo=agregarPelicula(*lugar);
-                if(seGuardo)
-                {
-                    printf("SE GUARDO CON EXITO!!!\n\n");
-                    cont++;
-                    aux=realloc(movie,cont);
-                    if (aux == NULL)
-                    {
-                        printf("\nNo hay lugar en memoria\n");
-                        exit(1);
-                    }
-                    (movie+cont-1)->estado=0;
-                }
-            }
-            else
-            {
-                printf("NO HAY LUGAR\n\n");
-            }
-
-*/
